@@ -16,5 +16,11 @@ namespace NewSystemQueue
             MM1Queue mM1Queue = new MM1Queue();
               mM1Queue.ShowDialog();
         }
+
+        private void btnMMS_Click(object sender, EventArgs e)
+        {
+            MMSQueue mMSQueue = new MMSQueue();
+            mMSQueue.ShowDialog();
+        }
     }
 }

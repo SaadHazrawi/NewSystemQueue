@@ -62,6 +62,12 @@
     <Compile Include="View\MM1Queue.Designer.cs">
       <DependentUpon>MM1Queue.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MMSQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MMSQueue.Designer.cs">
+      <DependentUpon>MMSQueue.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="View\MM1Queue.resx">
       <DependentUpon>MM1Queue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MMSQueue.resx">
+      <DependentUpon>MMSQueue.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
