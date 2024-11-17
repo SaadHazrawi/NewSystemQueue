@@ -56,6 +56,12 @@
     <Compile Include="Helper\InputHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\MM1KQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MM1KQueue.Designer.cs">
+      <DependentUpon>MM1KQueue.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MM1Queue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\MM1KQueue.resx">
+      <DependentUpon>MM1KQueue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MM1Queue.resx">
       <DependentUpon>MM1Queue.cs</DependentUpon>
     </EmbeddedResource>

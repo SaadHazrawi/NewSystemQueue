@@ -22,5 +22,11 @@ namespace NewSystemQueue
             MMSQueue mMSQueue = new MMSQueue();
             mMSQueue.ShowDialog();
         }
+
+        private void btnShowMM1K_Click(object sender, EventArgs e)
+        {
+            MM1KQueue mM1KQueue = new MM1KQueue();
+            mM1KQueue.ShowDialog();
+        }
     }
 }
