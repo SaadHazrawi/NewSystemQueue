@@ -42,7 +42,7 @@ namespace NewSystemQueue.View
             this.txtRho = new System.Windows.Forms.TextBox();
             this.btnCalcRho = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtN = new System.Windows.Forms.TextBox();
             this.btnCalcPn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPn = new System.Windows.Forms.TextBox();
@@ -134,18 +134,18 @@ namespace NewSystemQueue.View
             // 
             // txtRho
             // 
-            this.txtRho.Location = new System.Drawing.Point(422, 180);
+            this.txtRho.Location = new System.Drawing.Point(439, 180);
             this.txtRho.Name = "txtRho";
-            this.txtRho.Size = new System.Drawing.Size(144, 22);
+            this.txtRho.Size = new System.Drawing.Size(127, 22);
             this.txtRho.TabIndex = 36;
             // 
             // btnCalcRho
             // 
-            this.btnCalcRho.Location = new System.Drawing.Point(346, 177);
+            this.btnCalcRho.Location = new System.Drawing.Point(345, 177);
             this.btnCalcRho.Name = "btnCalcRho";
-            this.btnCalcRho.Size = new System.Drawing.Size(70, 28);
+            this.btnCalcRho.Size = new System.Drawing.Size(88, 28);
             this.btnCalcRho.TabIndex = 37;
-            this.btnCalcRho.Text = "Calc P";
+            this.btnCalcRho.Text = "Calc Rho";
             this.btnCalcRho.UseVisualStyleBackColor = true;
             this.btnCalcRho.Click += new System.EventHandler(this.btnCalcRho_Click);
             // 
@@ -158,12 +158,12 @@ namespace NewSystemQueue.View
             this.label2.TabIndex = 41;
             this.label2.Text = "N is Count Of Customer in Queue System But n<=k";
             // 
-            // textBox1
+            // txtN
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 22);
-            this.textBox1.TabIndex = 39;
+            this.txtN.Location = new System.Drawing.Point(346, 335);
+            this.txtN.Name = "txtN";
+            this.txtN.Size = new System.Drawing.Size(220, 22);
+            this.txtN.TabIndex = 39;
             // 
             // btnCalcPn
             // 
@@ -199,7 +199,7 @@ namespace NewSystemQueue.View
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtN);
             this.Controls.Add(this.btnCalcPn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRho);
@@ -235,7 +235,7 @@ namespace NewSystemQueue.View
         private System.Windows.Forms.TextBox txtRho;
         private System.Windows.Forms.Button btnCalcRho;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtN;
         private System.Windows.Forms.Button btnCalcPn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPn;

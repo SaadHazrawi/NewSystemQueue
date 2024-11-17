@@ -16,8 +16,10 @@ namespace NewSystemQueue.View
     {
         private double mho;
         private double lambda;
+        private double capacityCustomer;
+        private double p0;
         //TODO:Write Function to to set some field is default value
-        private double rho=-1;
+        private double rho = -1;
         public MM1KQueue()
         {
             InitializeComponent();
@@ -41,13 +43,13 @@ namespace NewSystemQueue.View
                 //TODO:Write Function to check if number is negative
                 mho = double.Parse(txtMho.Text);
                 lambda = double.Parse(txtLambda.Text);
-                if(mho<=0)
+                if (mho <= 0)
                 {
                     txtMho.Text = string.Empty;
                     txtMho.Focus();
                     throw new DivideByZeroException("can not mho equla zero or negative number fix him");
                 }
-                if(lambda>=mho)
+                if (lambda >= mho)
                 {
                     txtMho.Text = string.Empty;
                     txtLambda.Text = string.Empty;
@@ -70,12 +72,22 @@ namespace NewSystemQueue.View
 
         private void btnCalcPn_Click(object sender, EventArgs e)
         {
-
+            var xxxx = p0 * Math.Pow(rho, Convert.ToInt32(txtN.Text));
+            txtPn.Text = (xxxx * 100).ToString("F2") + " %";
         }
 
         private void btnCalcP0_Click(object sender, EventArgs e)
         {
+            capacityCustomer = Convert.ToDouble(txtK.Text);
+            p0 = CalcP0(capacityCustomer,rho);
+            txtP0.Text = (p0 * 100).ToString("F2") + " %";
+        }
 
+        private double CalcP0(double capacityCustomer, double rho)
+        {
+            var result = (1 - rho) / (1 - Math.Pow(rho, capacityCustomer + 1));
+
+            return result;
         }
     }
 }
