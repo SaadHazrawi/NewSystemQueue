@@ -1,13 +1,6 @@
 ﻿using ExteanstionExceaption;
 using NewSystemQueue.Helper;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NewSystemQueue.View
@@ -20,6 +13,8 @@ namespace NewSystemQueue.View
         private double p0;
         //TODO:Write Function to to set some field is default value
         private double rho = -1;
+        private double resultPn;
+
         public MM1KQueue()
         {
             InitializeComponent();
@@ -56,7 +51,7 @@ namespace NewSystemQueue.View
                     txtLambda.Focus();
                     throw new SystemUnstableException("لا يمكن أن تكون لامدا أكبر او تساوي ميو");
                 }
-                rho = CaclRho(mho, lambda);
+                rho = CalcRho(lambda, mho);
                 txtRho.Text = (rho * 100).ToString("F2") + " %";
             }
             catch (Exception ex)
@@ -65,29 +60,56 @@ namespace NewSystemQueue.View
             }
         }
 
-        private double CaclRho(double mho, double lambda)
+
+        private double CalcRho(double lambda, double mho)
         {
             return lambda / mho;
         }
 
         private void btnCalcPn_Click(object sender, EventArgs e)
         {
-            var xxxx = p0 * Math.Pow(rho, Convert.ToInt32(txtN.Text));
-            txtPn.Text = (xxxx * 100).ToString("F2") + " %";
+            //TODO:For Student Check if throw any Exception 
+            var p0Result = p0 * Math.Pow(rho, Convert.ToInt32(txtN.Text));
+            resultPn = p0Result * 100;
+            txtPn.Text = resultPn.ToString();
         }
 
         private void btnCalcP0_Click(object sender, EventArgs e)
         {
+            //TODO:Check if k is negative number 
             capacityCustomer = Convert.ToDouble(txtK.Text);
-            p0 = CalcP0(capacityCustomer,rho);
+            p0 = CalcP0(capacityCustomer, rho);
             txtP0.Text = (p0 * 100).ToString("F2") + " %";
         }
 
         private double CalcP0(double capacityCustomer, double rho)
         {
             var result = (1 - rho) / (1 - Math.Pow(rho, capacityCustomer + 1));
-
             return result;
+        }
+
+        private void btnCalcPk_Click(object sender, EventArgs e)
+        {
+            //TODO:For Student Check if throw any Exception 
+            var result = p0 * Math.Pow(rho, Convert.ToInt32(txtK.Text));
+            txtPk.Text = (result * 100).ToString("F2") + " %";
+        }
+
+        private void btnCalcLs_Click(object sender, EventArgs e)
+        {
+            capacityCustomer = Convert.ToDouble(txtK.Text);
+            var result = btnCalcLsResult(capacityCustomer);
+            txtLS.Text = (result * 100).ToString("F0") + " %";
+        }
+
+        private double btnCalcLsResult(double capacityCustomer)
+        {
+            double sum = 0;
+            for (int i = 1; i <= capacityCustomer; i++)
+            {
+                sum += (i * resultPn);
+            }
+            return sum;
         }
     }
 }

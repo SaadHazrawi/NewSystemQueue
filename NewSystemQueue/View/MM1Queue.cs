@@ -10,6 +10,7 @@ namespace NewSystemQueue.View
     {
         private double rho;
         private double p0;
+        public double p1111;
 
         public MM1Queue()
         {

@@ -46,104 +46,110 @@ namespace NewSystemQueue.View
             this.btnCalcPn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPn = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPk = new System.Windows.Forms.TextBox();
+            this.btnCalcPk = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtLS = new System.Windows.Forms.TextBox();
+            this.btnCalcLs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMMSReultP0
             // 
             this.lblMMSReultP0.AutoSize = true;
-            this.lblMMSReultP0.Location = new System.Drawing.Point(602, 289);
+            this.lblMMSReultP0.Location = new System.Drawing.Point(527, 289);
             this.lblMMSReultP0.Name = "lblMMSReultP0";
-            this.lblMMSReultP0.Size = new System.Drawing.Size(25, 17);
+            this.lblMMSReultP0.Size = new System.Drawing.Size(24, 17);
             this.lblMMSReultP0.TabIndex = 35;
             this.lblMMSReultP0.Text = "P0";
             // 
             // txtP0
             // 
-            this.txtP0.Location = new System.Drawing.Point(422, 281);
+            this.txtP0.Location = new System.Drawing.Point(369, 281);
             this.txtP0.Name = "txtP0";
-            this.txtP0.Size = new System.Drawing.Size(144, 22);
+            this.txtP0.Size = new System.Drawing.Size(126, 24);
             this.txtP0.TabIndex = 31;
             // 
             // txtK
             // 
-            this.txtK.Location = new System.Drawing.Point(346, 226);
+            this.txtK.Location = new System.Drawing.Point(303, 226);
             this.txtK.Name = "txtK";
-            this.txtK.Size = new System.Drawing.Size(220, 22);
+            this.txtK.Size = new System.Drawing.Size(193, 24);
             this.txtK.TabIndex = 32;
             // 
             // txtMho
             // 
-            this.txtMho.Location = new System.Drawing.Point(346, 129);
+            this.txtMho.Location = new System.Drawing.Point(303, 129);
             this.txtMho.Name = "txtMho";
-            this.txtMho.Size = new System.Drawing.Size(220, 22);
+            this.txtMho.Size = new System.Drawing.Size(193, 24);
             this.txtMho.TabIndex = 29;
             // 
             // txtLambda
             // 
             this.txtLambda.BackColor = System.Drawing.Color.White;
-            this.txtLambda.Location = new System.Drawing.Point(346, 80);
+            this.txtLambda.Location = new System.Drawing.Point(303, 80);
             this.txtLambda.Name = "txtLambda";
-            this.txtLambda.Size = new System.Drawing.Size(220, 22);
+            this.txtLambda.Size = new System.Drawing.Size(193, 24);
             this.txtLambda.TabIndex = 27;
             // 
             // btnCalcP0
             // 
-            this.btnCalcP0.Location = new System.Drawing.Point(345, 278);
+            this.btnCalcP0.Location = new System.Drawing.Point(285, 278);
             this.btnCalcP0.Name = "btnCalcP0";
-            this.btnCalcP0.Size = new System.Drawing.Size(71, 28);
+            this.btnCalcP0.Size = new System.Drawing.Size(79, 28);
             this.btnCalcP0.TabIndex = 34;
-            this.btnCalcP0.Text = "Calc P";
+            this.btnCalcP0.Text = "Calc P0";
             this.btnCalcP0.UseVisualStyleBackColor = true;
             this.btnCalcP0.Click += new System.EventHandler(this.btnCalcP0_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(602, 233);
+            this.label9.Location = new System.Drawing.Point(527, 233);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(176, 17);
+            this.label9.Size = new System.Drawing.Size(171, 17);
             this.label9.TabIndex = 33;
             this.label9.Text = "K is Capacity of Customers";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(602, 136);
+            this.label11.Location = new System.Drawing.Point(527, 136);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 17);
+            this.label11.Size = new System.Drawing.Size(36, 17);
             this.label11.TabIndex = 30;
             this.label11.Text = "mho";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(602, 87);
+            this.label12.Location = new System.Drawing.Point(527, 87);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 17);
+            this.label12.Size = new System.Drawing.Size(52, 17);
             this.label12.TabIndex = 28;
             this.label12.Text = "lambda";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(602, 188);
+            this.label1.Location = new System.Drawing.Point(527, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 17);
+            this.label1.Size = new System.Drawing.Size(33, 17);
             this.label1.TabIndex = 38;
             this.label1.Text = "Rho";
             // 
             // txtRho
             // 
-            this.txtRho.Location = new System.Drawing.Point(439, 180);
+            this.txtRho.Location = new System.Drawing.Point(384, 180);
             this.txtRho.Name = "txtRho";
-            this.txtRho.Size = new System.Drawing.Size(127, 22);
+            this.txtRho.Size = new System.Drawing.Size(112, 24);
             this.txtRho.TabIndex = 36;
             // 
             // btnCalcRho
             // 
-            this.btnCalcRho.Location = new System.Drawing.Point(345, 177);
+            this.btnCalcRho.Location = new System.Drawing.Point(302, 177);
             this.btnCalcRho.Name = "btnCalcRho";
-            this.btnCalcRho.Size = new System.Drawing.Size(88, 28);
+            this.btnCalcRho.Size = new System.Drawing.Size(77, 28);
             this.btnCalcRho.TabIndex = 37;
             this.btnCalcRho.Text = "Calc Rho";
             this.btnCalcRho.UseVisualStyleBackColor = true;
@@ -152,24 +158,24 @@ namespace NewSystemQueue.View
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(602, 343);
+            this.label2.Location = new System.Drawing.Point(527, 343);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(328, 17);
+            this.label2.Size = new System.Drawing.Size(325, 17);
             this.label2.TabIndex = 41;
             this.label2.Text = "N is Count Of Customer in Queue System But n<=k";
             // 
             // txtN
             // 
-            this.txtN.Location = new System.Drawing.Point(346, 335);
+            this.txtN.Location = new System.Drawing.Point(303, 335);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(220, 22);
+            this.txtN.Size = new System.Drawing.Size(193, 24);
             this.txtN.TabIndex = 39;
             // 
             // btnCalcPn
             // 
-            this.btnCalcPn.Location = new System.Drawing.Point(345, 390);
+            this.btnCalcPn.Location = new System.Drawing.Point(302, 390);
             this.btnCalcPn.Name = "btnCalcPn";
-            this.btnCalcPn.Size = new System.Drawing.Size(71, 28);
+            this.btnCalcPn.Size = new System.Drawing.Size(62, 28);
             this.btnCalcPn.TabIndex = 40;
             this.btnCalcPn.Text = "Calc Pn";
             this.btnCalcPn.UseVisualStyleBackColor = true;
@@ -178,24 +184,82 @@ namespace NewSystemQueue.View
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(602, 401);
+            this.label3.Location = new System.Drawing.Point(527, 401);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 17);
+            this.label3.Size = new System.Drawing.Size(24, 17);
             this.label3.TabIndex = 43;
             this.label3.Text = "Pn";
             // 
             // txtPn
             // 
-            this.txtPn.Location = new System.Drawing.Point(422, 393);
+            this.txtPn.Location = new System.Drawing.Point(369, 393);
             this.txtPn.Name = "txtPn";
-            this.txtPn.Size = new System.Drawing.Size(144, 22);
+            this.txtPn.Size = new System.Drawing.Size(126, 24);
             this.txtPn.TabIndex = 42;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(527, 476);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 17);
+            this.label4.TabIndex = 46;
+            this.label4.Text = "Pk";
+            // 
+            // txtPk
+            // 
+            this.txtPk.Location = new System.Drawing.Point(369, 468);
+            this.txtPk.Name = "txtPk";
+            this.txtPk.Size = new System.Drawing.Size(126, 24);
+            this.txtPk.TabIndex = 45;
+            // 
+            // btnCalcPk
+            // 
+            this.btnCalcPk.Location = new System.Drawing.Point(302, 465);
+            this.btnCalcPk.Name = "btnCalcPk";
+            this.btnCalcPk.Size = new System.Drawing.Size(62, 28);
+            this.btnCalcPk.TabIndex = 44;
+            this.btnCalcPk.Text = "Calc Pk";
+            this.btnCalcPk.UseVisualStyleBackColor = true;
+            this.btnCalcPk.Click += new System.EventHandler(this.btnCalcPk_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(527, 565);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 17);
+            this.label5.TabIndex = 49;
+            this.label5.Text = "Ls";
+            // 
+            // txtLS
+            // 
+            this.txtLS.Location = new System.Drawing.Point(369, 557);
+            this.txtLS.Name = "txtLS";
+            this.txtLS.Size = new System.Drawing.Size(126, 24);
+            this.txtLS.TabIndex = 48;
+            // 
+            // btnCalcLsResult
+            // 
+            this.btnCalcLs.Location = new System.Drawing.Point(302, 554);
+            this.btnCalcLs.Name = "btnCalcLsResult";
+            this.btnCalcLs.Size = new System.Drawing.Size(62, 28);
+            this.btnCalcLs.TabIndex = 47;
+            this.btnCalcLs.Text = "calc Ls";
+            this.btnCalcLs.UseVisualStyleBackColor = true;
+            this.btnCalcLs.Click += new System.EventHandler(this.btnCalcLs_Click);
             // 
             // MM1KQueue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 569);
+            this.ClientSize = new System.Drawing.Size(951, 716);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtLS);
+            this.Controls.Add(this.btnCalcLs);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtPk);
+            this.Controls.Add(this.btnCalcPk);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPn);
             this.Controls.Add(this.label2);
@@ -239,5 +303,11 @@ namespace NewSystemQueue.View
         private System.Windows.Forms.Button btnCalcPn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPk;
+        private System.Windows.Forms.Button btnCalcPk;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtLS;
+        private System.Windows.Forms.Button btnCalcLs;
     }
 }
