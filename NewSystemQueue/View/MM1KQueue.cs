@@ -99,7 +99,7 @@ namespace NewSystemQueue.View
         {
             capacityCustomer = Convert.ToDouble(txtK.Text);
             var result = btnCalcLsResult(capacityCustomer);
-            txtLS.Text = (result * 100).ToString("F0") + " %";
+            txtLS.Text = (result ).ToString("F0");
         }
 
         private double btnCalcLsResult(double capacityCustomer)

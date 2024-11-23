@@ -15,7 +15,7 @@ namespace NewSystemQueue.Helper
         /// <param name="form">form control pass to clear data</param>
         public static void ClearText(Form form)
         {
-
+         
             foreach (Control control in form.Controls)
             {
                 if (control is TextBox text)
@@ -23,7 +23,6 @@ namespace NewSystemQueue.Helper
                     text.Clear();
                 }
             }
-
         }
     }
 }

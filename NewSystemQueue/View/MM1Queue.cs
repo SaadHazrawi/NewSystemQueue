@@ -35,7 +35,11 @@ namespace NewSystemQueue.View
             txtWq.ReadOnly = true;
             txtRho.ReadOnly = true;
             txtP0.ReadOnly = true;
+
         }
+
+
+
         /// <summary>
         /// applay event into all text box inside control
         /// </summary>
@@ -65,7 +69,7 @@ namespace NewSystemQueue.View
                     throw new SystemUnstableException("لا يمكن ان تكون متساوية القيم");
                 }
                 rho = lambda / mu;
-                txtRho.Text =( rho * 100).ToString("F0") + "%";
+                txtRho.Text = (rho * 100).ToString("F0") + "%";
 
 
             }
@@ -74,6 +78,11 @@ namespace NewSystemQueue.View
                 if (ex is FormatException)
                     MessageBox.Show("تأكد من إدخال قيم صحيحة للمدخلات.");
                 else if (ex is DivideByZeroException)
+                {
+                    txtMho.BackColor = Color.Red;
+                    MessageBox.Show(ex.Message);
+                }
+                else if (ex is SystemUnstableException)
                 {
                     txtMho.BackColor = Color.Red;
                     MessageBox.Show(ex.Message);
@@ -106,10 +115,10 @@ namespace NewSystemQueue.View
                 double W = 1 / (mu - lambda);
                 double Wq = rho / (mu - lambda);
 
-                txtLs.Text = (L * 100).ToString("F0") + "%"; 
-                txtLq.Text = (Lq * 100).ToString("F0") + "%";
-                txtWs.Text = (W * 100).ToString("F0") + "%";
-                txtWq.Text = (Wq * 100).ToString("F0") + "%";
+                txtLs.Text = L.ToString();
+                txtLq.Text = Lq.ToString();
+                txtWs.Text = W.ToString();
+                txtWq.Text = Wq.ToString();
 
             }
             catch (FormatException)
