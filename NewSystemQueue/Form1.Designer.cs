@@ -32,6 +32,7 @@
             this.btnMM1 = new System.Windows.Forms.Button();
             this.btnMMS = new System.Windows.Forms.Button();
             this.btnShowMM1K = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +41,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnMM1);
             this.flowLayoutPanel1.Controls.Add(this.btnMMS);
             this.flowLayoutPanel1.Controls.Add(this.btnShowMM1K);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -79,6 +81,17 @@
             this.btnShowMM1K.UseVisualStyleBackColor = true;
             this.btnShowMM1K.Click += new System.EventHandler(this.btnShowMM1K_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(467, 3);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "show M/M/Inf";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -98,6 +111,7 @@
         private System.Windows.Forms.Button btnMM1;
         private System.Windows.Forms.Button btnMMS;
         private System.Windows.Forms.Button btnShowMM1K;
+        private System.Windows.Forms.Button button1;
     }
 }
 

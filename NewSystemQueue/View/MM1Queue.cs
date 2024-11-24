@@ -184,7 +184,7 @@ namespace NewSystemQueue.View
         private void btnClear_Click(object sender, EventArgs e)
         {
             //This is hepler
-            ClearTextBoxText.ClearText(this);
+            TextBoxHelper.ClearText(this);
             SetDefulatValue();
         }
 

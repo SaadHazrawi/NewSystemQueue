@@ -28,5 +28,11 @@ namespace NewSystemQueue
             MM1KQueue mM1KQueue = new MM1KQueue();
             mM1KQueue.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MMInf mMInf = new MMInf();
+            mMInf.ShowDialog();
+        }
     }
 }
